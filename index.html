@@ -1,15 +1,23 @@
 <!doctype html>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>TechFinder</title>
+   <!-- GOOGLE FONT -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
     <link rel="stylesheet" href="css/style-3.css">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    </head>                  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+         <!-- GOOGLE'S MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"> 
+  
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <!-- JavaScript -->
+  <script src="logic.js"></script>
+    
+      </head>                  
 
     <nav role="navigation" class="black">
             <div class="nav-wrapper container">
@@ -22,13 +30,12 @@
                   <a href="#" class="white-text">About</a>
                 </li>
                 <li>
-                  <a href="#" class="white-text">About</a>
+                  <a href="#" class="white-text">Sign up</a>
                 </li>
                 <li>
                   <a href="#" class="white-text">Contact</a>
                 </li>
               </ul>
-
               
               <ul id="nav-mobile" class="side-nav black">
                 <li>
@@ -38,11 +45,9 @@
                   <a href="#" class="white-text">About</a>
                 </li>
                 <li>
-
-                 <a href="#" class="white-text">About</a>
+                 <a href="#" class="white-text">Sign up</a>
                 </li>
                 <li>
-
                   <a href="#" class="white-text">Contact</a>
                 </li>
               </ul>
@@ -62,12 +67,11 @@
                   <h5 class="header col s12 light"> let us help you to find a perfect device
                   </h5>
                 </div>
-
+                
                 <div class="row center">
-                  <a href="file:///Users/raianazaman/temp/project/user%20form.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+                  <a href="file:///Users/raianazaman/temp/project/user%20form.html" id="download-button" class="btn-large waves-effect waves-light orange" data-tooltip="Click To Start.">Get Started</a>
                 </div>
                 
-
                 <br/>
                 <br/>
               </div>
@@ -114,18 +118,18 @@
                       <div class="row">
                         <div class="col m4 s6">
                           <div class="single-member">
-                            <img src="https://randomuser.me/api/portraits/women/82.jpg" alt="" class="profile-img"/>
-                            <h5>Marian Holmes
+                            <img src="Image/rai.jpg" alt="" class="profile-img"/>
+                            <h5>Raiana Zaman
                             </h5>
                             <ul class="social-icons">
                               <li>
-                                <a href="#"><img src="https://res.cloudinary.com/ronaldaug/image/upload/v1530271176/facebook_xufb3l.png" alt="facebook"/></a>
+                                <a href="https://www.facebook.com"><img src="https://res.cloudinary.com/ronaldaug/image/upload/v1530271176/facebook_xufb3l.png" alt="facebook"/></a>
                               </li>
                               <li>
-                                <a href="#"><img src="https://res.cloudinary.com/ronaldaug/image/upload/v1530271176/twitter_cxpl2b.png" alt="twitter"/></a>
+                                <a href="https://twitter.com/RaianaZ"><img src="https://res.cloudinary.com/ronaldaug/image/upload/v1530271176/twitter_cxpl2b.png" alt="twitter"/></a>
                               </li>
                               <li>
-                                <a href="#"><img src="https://res.cloudinary.com/ronaldaug/image/upload/v1530271176/linkedin_vkgoom.png" alt="linkedin"/></a>
+                                <a href="https://www.linkedin.com/in/raiana-zaman/"><img src="https://res.cloudinary.com/ronaldaug/image/upload/v1530271176/linkedin_vkgoom.png" alt="linkedin"/></a>
                               </li>
                             </ul>
                           </div>
@@ -133,7 +137,7 @@
                         <div class="col m4 s6">
                           <div class="single-member">
                             <img src="https://randomuser.me/api/portraits/women/74.jpg" alt="" class="profile-img"/>
-                            <h5>Peggy Henry
+                            <h5>Sam Almanzar
                             </h5>
                             <ul class="social-icons">
                               <li>
@@ -151,7 +155,7 @@
                         <div class="col m4 s6">
                           <div class="single-member">
                             <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="" class="profile-img"/>
-                            <h5>Eduardo Carter
+                            <h5>Quy Nguyen
                             </h5>
                             <ul class="social-icons">
                               <li>
@@ -170,6 +174,7 @@
                     </div>
                   </section>
                 </div>
+                 <!-- JavaScript 
                 <div class="col m6 l6 s12">
                   <div class="row">
                     <div class="col m12">
@@ -194,6 +199,7 @@
                       <div class="col s12">
                         <button type="submit" name="action" class="btn send-message waves-effect waves-light orange">Send<i class="material-icons right">send
                           </i></button>
+                          -->
                       </div>
                     </div>
                   </form>
@@ -201,7 +207,6 @@
               </div>
             </div>
           </footer>
-
      
   <footer>
     <div class="container-wide black">
@@ -211,7 +216,6 @@
       </div>
     </div>
   </footer>
-
           <script>
             jQuery(document).ready(function ($) {
               $('.parallax').parallax();

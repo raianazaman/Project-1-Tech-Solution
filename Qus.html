@@ -1,13 +1,21 @@
 <!doctype html>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/style-3.css">
+    <link rel="stylesheet" href="css/styles.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    </head>     
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <!-- JavaScript -->
+  <script src="logic.js"></script>
+
+    </head>  
+    <body> 
+      
     <nav role="navigation" class="black">
         <div class="nav-wrapper container">
           <a id="logo-container" href="#" class="brand-logo orange-text">logo</a>
@@ -44,160 +52,69 @@
             <img src="http://via.placeholder.com/250x250/0174DF/ffffff/" class="responsive-img"/>
         </div>
       </nav>
-      <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <br/>
-            <br/>
-            <h1 class="header center">welcome
-            </h1>
-            <div class="row center">
-              <h5 class="header col s12 light">tell us about you
-              </h5>
+<!-- END NAV -->
+
+<div class="parallax-container" id='parall'>
+   
+    <section id="introSection">
+        
+        <h1 class="center-align" id='header'>Tell Us little bit about you</h1>
+
+        <div class="row" id="introCard">
+            <div class="col s6 offset-s3">
+                <div class="center-align">
+                   
+                </div>
             </div>
-            <div class="row center">
-            </div>
-            <br/>
-            <br/>
-          </div>
         </div>
-        <div class="parallax">
-          <img src="54.jpg" alt="Unsplashed background img 1"/>
+
+        <div class="row" id="buttonRow">
+            <div class="col s3 offset-s3 center-align">
+                <a class="waves-effect waves-light btn-large btn-flat tooltipped" data-position="left" data-delay="50" data-tooltip="Click To Start."href="#work" id="startButton">Start/work </a>
+            </div>
+            
+
+        </div>
+        <div class="parallax-container">
+          
         </div>
       </div>
-      <div class="container">
-        <div class="section">
+     
+      <div class="parallax"><img src="54.jpg"></div>
+<!-- QUESTIONS -->
+<section id="questionSpace" class="container">
+    <div class="row">
+        
+    </div>
+    <div class="row" id="messageSection">
+        <div class="col s12" id="gameMessage">
+
         </div>
-        <form id="myForm" action="#" method="POST">
-          <div class="row">
-            <div class="col m12">
-              <div class="row">
-                <form id="myForm" class="col s12">
-                  <div class="row">
-                  </div>
-                </form>
-                <ul class="collection">
-                  <li class="collection-item">Qustion One
-                  </li>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <p>
-                        <input name="group1" type="radio" id="test1"/>
-                        <label for="test1">Red</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test2"/>
-                        <label for="test2">Yellow</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test3" class="with-gap"/>
-                        <label for="test3">Green</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test4" disabled="disabled"/>
-                        <label for="test4">Brown</label>
-                      </p>
-                    </div>
-                  </div>
-                  <script>$("select").material_select();
-                  </script>
-                  <li class="collection-item">List Three
-                  </li>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <p>
-                        <input name="group1" type="radio" id="test1"/>
-                        <label for="test1">Red</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test2"/>
-                        <label for="test2">Yellow</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test3" class="with-gap"/>
-                        <label for="test3">Green</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test4" disabled="disabled"/>
-                        <label for="test4">Brown</label>
-                      </p>
-                    </div>
-                  </div>
-                  <li class="collection-item">List Four
-                  </li>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <p>
-                        <input name="group1" type="radio" id="test1"/>
-                        <label for="test1">Red</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test2"/>
-                        <label for="test2">Yellow</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test3" class="with-gap"/>
-                        <label for="test3">Green</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test4" disabled="disabled"/>
-                        <label for="test4">Brown</label>
-                      </p>
-                    </div>
-                  </div>
-                </ul>
-                <ul class="collection">
-                  <li class="collection-item">List One
-                  </li>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <p>
-                        <input name="group1" type="radio" id="test1"/>
-                        <label for="test1">Red</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test2"/>
-                        <label for="test2">Yellow</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test3" class="with-gap"/>
-                        <label for="test3">Green</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test4" disabled="disabled"/>
-                        <label for="test4">Brown</label>
-                      </p>
-                    </div>
-                  </div>
-                  <li class="collection-item">List Two
-                  </li>
-                  <div class="input-field col s12">
-                    <select><option value="" disabled="" selected="">Choose your option</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select>
-                    <label>Materialize Select</label>
-                  </div>
-                  <script>$("select").material_select();
-                  </script>
-                  <li class="collection-item">List Three
-                  </li>
-                  <div class="input-field col s12">
-                    <select><option value="" disabled="" selected="">Choose your option</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select>
-                    <label>Materialize Select</label>
-                  </div>
-                  <script>$("select").material_select();
-                  </script>
-                  <li class="collection-item">List Four
-                  </li>
-                  <div class="input-field col s12">
-                    <select><option value="" disabled="" selected="">Choose your option</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select>
-                    <label>Materialize Select</label>
-                    <a href="file:///Users/raianazaman/temp/project/result.html"class="btn waves-effect waves-light orange">button</a>
-                  </div>
-                  <script>$("select").material_select();
-                  </script>
-                </ul>
-              </div>
-            </div>
-          </div>
+    </div>
+    <div class="row">
+        <div id="questionContainer" class="col s12 center-align">
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="choices" class="col s8 offset-s2 center-align">
+            <!-- PUSH QUESTIONS IN <p> -->
+        </div>
+    </div>
+</section>
+
+<section id="resultSpace" class="container"></section>
+<section id="reviewSpace" class="container"></section>
+</section>
+
+<!-- END QUESTIONS -->
+</section>
+
+
+
+</div>
+
+         
         </form>
         <div class="row">
         </div>
@@ -219,3 +136,17 @@
         }
                               );
       </script>
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- JQUERY UI CDN -->
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- MATERIALIZE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!-- FONT AWESOME -->
+    <script src="https://use.fontawesome.com/dce08cf54a.js"></script>
+    <!-- TRIVIA JS -->
+    <script src="javascript/trivia.js"></script>
+  </body>  
+    </html>
