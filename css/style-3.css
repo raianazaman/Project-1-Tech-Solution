@@ -8,9 +8,20 @@
     float:none;
     text-align:center;
   }
+  #introCard {
+
+    font-size: 30px;
+   
+}
   .row, .parallax-container .section{
     width:100%;
   }
+  h1{
+    font-size: 120px;
+    font-family:Georgia, serif;
+    color: orange;
+  }
+
   .row{
     display:table;
     padding-top:10px;

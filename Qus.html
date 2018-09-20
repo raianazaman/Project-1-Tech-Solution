@@ -1,20 +1,21 @@
 <!doctype html>
 <html>
 <head>
-  
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/style-3.css">
+    <link rel="stylesheet" href="css/styles.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">\
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <!-- JavaScript -->
   <script src="logic.js"></script>
 
-    </head>     
+    </head>  
+    <body> 
+      
     <nav role="navigation" class="black">
         <div class="nav-wrapper container">
           <a id="logo-container" href="#" class="brand-logo orange-text">logo</a>
@@ -54,13 +55,15 @@
 <!-- END NAV -->
 
 <div class="parallax-container" id='parall'>
+   
     <section id="introSection">
+        
         <h1 class="center-align" id='header'>Tell Us little bit about you</h1>
 
         <div class="row" id="introCard">
             <div class="col s6 offset-s3">
                 <div class="center-align">
-                    <span>What is the purpose of the laptop?</span>
+                   
                 </div>
             </div>
         </div>
@@ -69,208 +72,49 @@
             <div class="col s3 offset-s3 center-align">
                 <a class="waves-effect waves-light btn-large btn-flat tooltipped" data-position="left" data-delay="50" data-tooltip="Click To Start."href="#work" id="startButton">Start/work </a>
             </div>
-            <div class="col s3 center-align">
-                <a class="modal-trigger waves-effect waves-light btn-large btn-flat tooltipped" data-position="right" data-delay="50" data-tooltip="Click For Instructions." href="#instructionModal" id="instructionButton">Instructions/Game</a>
-            </div>
-            <div class="col s3 offset-s3 center-align">
-                <a class="waves-effect waves-light btn-large btn-flat tooltipped" data-position="left" data-delay="50" data-tooltip="Click To Start."href="#work" id="startButton">Start/School</a>
-            </div>
-            <div class="col s3 center-align">
-                <a class="modal-trigger waves-effect waves-light btn-large btn-flat tooltipped" data-position="right" data-delay="50" data-tooltip="Click For Instructions." href="#instructionModal" id="instructionButton">Instructions/School</a>
-            </div>
+            
 
         </div>
-        <div class="parallax">
-          <img src="54.jpg" alt="Unsplashed background img 1"/>
+        <div class="parallax-container">
+          
         </div>
       </div>
-      <div class="container">
-        <div class="section">
+     
+      <div class="parallax"><img src="54.jpg"></div>
+<!-- QUESTIONS -->
+<section id="questionSpace" class="container">
+    <div class="row">
+        
+    </div>
+    <div class="row" id="messageSection">
+        <div class="col s12" id="gameMessage">
+
         </div>
+    </div>
+    <div class="row">
+        <div id="questionContainer" class="col s12 center-align">
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="choices" class="col s8 offset-s2 center-align">
+            <!-- PUSH QUESTIONS IN <p> -->
+        </div>
+    </div>
+</section>
+
+<section id="resultSpace" class="container"></section>
+<section id="reviewSpace" class="container"></section>
+</section>
+
+<!-- END QUESTIONS -->
+</section>
 
 
 
-        <form id="myForm" action="#" method="POST">
-          <div class="row">
-            <div class="col m12">
-              <div class="row">
-                <form id="myForm" class="col s12">
-                  <div class="row">
-                  </div>
-                </form>
-                <ul class="collection">
-                  <li class="collection-item">What is the purpose of the laptop?
-                  </li>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <p>
-                        <input name="group1" type="radio" id="test1"/>
-                        <label for="test1">Work</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test2"/>
-                        <label for="test2">School</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test3" class="with-gap"/>
-                        <label for="test3">Games</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test4" disabled="disabled"/>
-                        <label for="test4">Entertainment</label>
-                      </p>
-                    </div>
-                  </div>
-                  <script>$("select").material_select();
-               
-                  </script> <!-- if answer equals 1 or 2 --> 
-                  <li class="collection-item">What kind of work will you use the laptop for?
-                  </li>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <p>
-                        <input name="group1" type="radio" id="test1"/>
-                        <label for="test1">heavy typing papers and essays</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test2"/>
-                        <label for="test2">video and design editing</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test3" class="with-gap"/>
-                        <label for="test3">software development/coding</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test4" disabled="disabled"/>
-                        <label for="test4">document files and organization</label>
-                      </p>
-                    </div>
-                  </div><!-- if answer equals 3 or 4 -->
-                  <li class="collection-item">what king of entertainment will this be used for?
-                  </li>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <p>
-                        <input name="group1" type="radio" id="test1"/>
-                        <label for="test1">heavy gaming</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test2"/>
-                        <label for="test2">casual games and Hd movies/TV</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test3" class="with-gap"/>
-                        <label for="test3">Photo/video editing</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test4" disabled="disabled"/>
-                        <label for="test4">Watching Hd movies/TV</label>
-                      </p>
-                    </div>
-                  </div>
-                </ul>
-                <ul class="collection">
-                  <li class="collection-item">whats your budget?
-                  </li>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <p>
-                        <input name="group1" type="radio" id="test1"/>
-                        <label for="test1">less than then $500</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test2"/>
-                        <label for="test2">$500-$1000</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test3" class="with-gap"/>
-                        <label for="test3">$1000-$2000</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test4" disabled="disabled"/>
-                        <label for="test4">if like it ill buy it</label>
-                      </p>
-                    </div>
-                  </div>
-                  <li class="collection-item">looks and design material?
-                  </li>
-                  <div class="input-field col s12">
-                    <select><option value="" disabled="" selected="">Choose your option</option><option value="1">needs to be good quality and sturdy</option><option value="2">Osleek and cool</option><option value="3">easy to move around but still powerful</option><option value="4">unique and solid-artist,student,average user</option></select>
-                    <label>Materialize Select</label>
-                  </div>
-                  <script>$("select").material_select();
-                  </script>
-                  <li class="collection-item">Are you looking for something touchscreen
-                  </li>
-                  <div class="input-field col s12">
-                    <select><option value="" disabled="" selected="">Choose your option</option><option value="1">yes</option><option value="2">no</option><option value="3">either</option></select>
-                    <label>Materialize Select</label>
-                  </div>
-                  <script>$("select").material_select();
-                  </script>
+</div>
 
-                  <li class="collection-item">What kind of storage space?
-                  </li>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <p>
-                        <input name="group1" type="radio" id="test1"/>
-                        <label for="test1">hard drive</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test2"/>
-                        <label for="test2">Solid State drive</label>
-                      </p>
-                      <p>
-                        <input name="group1" type="radio" id="test3" class="with-gap"/>
-                        <label for="test3">either</label>
-                      </p>
-                    </div>
-                  </div>
-                    <li class="collection-item">Screen size
-                    </li>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <p>
-                          <input name="group1" type="radio" id="test1"/>
-                          <label for="test1">13"</label>
-                        </p>
-                        <p>
-                          <input name="group1" type="radio" id="test2"/>
-                          <label for="test2">15"</label>
-                        </p>
-                        <p>
-                          <input name="group1" type="radio" id="test3" class="with-gap"/>
-                          <label for="test3">17"</label>
-                        </p>
-                      </div>
-                    </div>
-                      <li class="collection-item">OS prefrences?
-                      </li>
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <p>
-                            <input name="group1" type="radio" id="test1"/>
-                            <label for="test1">Mac</label>
-                          </p>
-                          <p>
-                            <input name="group1" type="radio" id="test2"/>
-                            <label for="test2">PC</label>
-                          </p>
-                          <p>
-                            <input name="group1" type="radio" id="test3" class="with-gap"/>
-                            <label for="test3">Chrome OS</label>
-                          </p>
-                        </div>
-                      </div>
-                    <a href="file:///Users/raianazaman/temp/project/result.html"class="btn waves-effect waves-light orange">button</a>
-                  </div>
-                  <script>$("select").material_select();
-                  </script>
-                </ul>
-              </div>
-            </div>
-          </div>
+         
         </form>
         <div class="row">
         </div>
@@ -292,3 +136,17 @@
         }
                               );
       </script>
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- JQUERY UI CDN -->
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- MATERIALIZE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!-- FONT AWESOME -->
+    <script src="https://use.fontawesome.com/dce08cf54a.js"></script>
+    <!-- TRIVIA JS -->
+    <script src="javascript/trivia.js"></script>
+  </body>  
+    </html>
