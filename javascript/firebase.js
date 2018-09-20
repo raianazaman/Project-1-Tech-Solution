@@ -1,5 +1,5 @@
- // Initialize Firebase
- var config = {
+// Initialize Firebase
+var config = {
     apiKey: "AIzaSyBdOgmeJMsbFhc7NoDTOxLycFBuK6NeyZE",
     authDomain: "unc-coding-project-1.firebaseapp.com",
     databaseURL: "https://unc-coding-project-1.firebaseio.com",
@@ -49,4 +49,8 @@ $("#userInfo").on("click", function(event){
 
 
 
-    
+    $(document).ready(function() {
+        $("#userInfo").click(function(){
+            $("#userInfo").hide();
+        });
+    });

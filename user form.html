@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/style-3.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    </head>   
+		 <!-- JavaScript -->
+		 <script src="javascript/logic.js"></script>
+		</head>   
 
 
 
@@ -16,13 +18,13 @@
 	<a id="logo-container" href="#" class="brand-logo orange-text">logo</a>
 	<ul class="right hide-on-med-and-down">
 	  <li>
-		<a href="#" class="white-text">Home</a>
+		<a href="index.html" class="white-text">Home</a>
 	  </li>
 	  <li>
-		<a href="#" class="white-text">About</a>
+		<a href="user form.html" class="white-text">Sign up</a>
 	  </li>
 	  <li>
-		<a href="#" class="white-text">About</a>
+		<a href="Qus.html" class="white-text">Get started</a>
 	  </li>
 	  <li>
 		<a href="#" class="white-text">Contact</a>
@@ -31,12 +33,14 @@
   
   <ul id="nav-mobile" class="side-nav black">
 	  <li>
-		<a href="#" class="white-text">Home</a>
+		<a href="index.html" class="white-text">Home</a>
 	  </li>
 	  <li>
-		<a href="#" class="white-text">About</a>
+		<a href="user form.html"  class="white-text">About</a>
     </li>
     <li>
+    <a href="Qus.html" class="white-text">About</a>
+    </li>
 	  <li>
 		<a href="#" class="white-text">Contact</a>
 	  </li>
@@ -46,86 +50,96 @@
   <img src="http://via.placeholder.com/250x250/0174DF/ffffff/" class="responsive-img"/>
   </div>
 </nav>
+<!-- END NAV -->
+
 <div id="index-banner" class="parallax-container">
-  <div class="section no-pad-bot">
-	<div class="container">
-	  <br/>
-	  <br/>
-	  <h1 class="header center">Welcome
-	  </h1>
-	  <div class="row center">
-		<h5 class="header col s12 light">Tell us about you
-		</h5>
-	  </div>
-	  <div class="row center">
-	  </div>
-	  <br/>
-	  <br/>
-	</div>
-  </div>
-  <div class="parallax">
-	<img src="54.jpg"alt="Unsplashed background img 1"/>
-  </div>
-</div>
-<div class="container">
-  <div class="section">
-  </div>
-  <form id="myForm" action="#" method="POST">
-	<div class="row">
-	  <div class="col m12">
-		<div class="row">
-		  <form id="myForm" class="col s12">
-			<div class="row">
-			  <div class="input-field col s6">
-				<input id="first_name" type="text" class="validate"/>
-				<label for="first_name">First Name</label>
-			  </div>
-			  <div class="input-field col s6">
-				<input id="last_name" type="text" class="validate"/>
-				<label for="last_name">Last Name</label>
-			  </div>
+		<div class="section no-pad-bot">
+		<div class="container">
+			<br/>
+			<br/>
+			<h1 class="header center">Welcome
+			</h1>
+			<div class="row center">
+			<h5 class="header col s12 light">Tell us about you
+			</h5>
 			</div>
-			<div class="row">
-			  <div class="input-field col s12">
-				<input id="phoneNumber" type="text" class="validate"/>
-				<label for="phoneNumber">Phone Number</label>
-			  </div>
+			<div class="row center">
 			</div>
-			<div class="row">
-			  <div class="input-field col s12">
-				<input id="email" type="email" class="validate"/>
-				<label for="email">Email</label>
-			  </div>
-			</div>
-			<a href="Qus.html" class="btn waves-effect waves-light orange" id="userInfo">Send</a>
-			<div class="row">
-			</div>
-
-		  </form>
+			<br/>
+			<br/>
 		</div>
-	  </div>
+		</div>
+		<div class="parallax">
+		<img src="54.jpg"alt="Unsplashed background img 1"/>
+		</div>
 	</div>
-  </form>
-  <div class="row">
-  </div>
-</div>
-<div class="container">
-</div>
-<footer>
-  <div class="container-wide black">
-	<div class="row">
-	  <div>Copyright
-	  </div>
-	</div>
-  </div>
-</footer>
-<script>
-  jQuery(document).ready(function ($) {
-	$('.parallax').parallax();
-	$('.button-collapse').sideNav();
-  }
-						);
-</script>
-<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
 
-<script src="javascript/firebase.js"></script>
+
+
+	<div class="container">
+		<div class="section">
+		</div>
+		<form id="myForm" action="#" method="POST">
+		<div class="row">
+			<div class="col m12">
+			<div class="row">
+				<form id="myForm" class="col s12">
+				<div class="row">
+					<div class="input-field col s6">
+					<input id="first_name" type="text" class="validate"/>
+					<label for="first_name">First Name</label>
+					</div>
+					<div class="input-field col s6">
+					<input id="last_name" type="text" class="validate"/>
+					<label for="last_name">Last Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+					<input id="phoneNumber" type="text" class="validate"/>
+					<label for="phoneNumber">Phone Number</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+					<input id="email" type="email" class="validate"/>
+					<label for="email">Email</label>
+					</div>
+				</div>
+				<a href="Qus.html" class="btn waves-effect waves-light orange" id="userInfo">Send</a>
+			</br> </br>
+			</form>
+				<a href="Qus.html" class="btn waves-effect waves-light orange" id="next">Next</a>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+				<div class="row">
+				</div>
+	
+				</form>
+			</div>
+			</div>
+		</div>
+		</form>
+		<div class="row">
+		</div>
+	</div>
+	<div class="container">
+	</div>
+	<footer>
+		<div class="container-wide black">
+		<div class="row">
+			<div>Copyright
+			</div>
+		</div>
+		</div>
+	</footer>
+	<script>
+		jQuery(document).ready(function ($) {
+		$('.parallax').parallax();
+		$('.button-collapse').sideNav();
+		}
+							);
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+	
+	<script src="javascript/firebase.js"></script>

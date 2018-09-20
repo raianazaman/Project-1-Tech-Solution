@@ -26,7 +26,6 @@ Parallax and Page Styling
 
 #header {
     color: #fff;
-    font-family: 'Monoton', cursive;
     font-size: 100px;
 }
 
@@ -37,7 +36,7 @@ Parallax and Page Styling
 }
 
 #introCard {
-    color: rgb(241, 20, 20);
+    color: white;
     font-size: 30px;
     margin: 30px 0;
     background-color: transparent;
@@ -61,9 +60,9 @@ Parallax and Page Styling
 
     font-size: 20px;
     font-weight: bolder;
-    background: orange;
+    text-align:center;
     background-color:  white;
-   
+  
 }
 
 .btn-large:hover {
@@ -76,7 +75,7 @@ Parallax and Page Styling
 *********************/
 
 #questionSpace {
-    color: rgb(226, 24, 24);
+    color:white;
     margin-top: 40px;
     /*border: #fff 5px solid;
   border-radius: 6px;*/
@@ -103,13 +102,13 @@ Parallax and Page Styling
 }
 
 .pickAnswer {
-    border: solid 5px rgb(202, 17, 17);
+    border: solid 5px white; 
 }
 
 .pickAnswer, .pickAnswer:hover {
     display: block;
     margin: 20px 0;
-    padding: 10px;
+    padding: 20px;
     border-radius: 6px;
 }
 
@@ -117,3 +116,7 @@ Parallax and Page Styling
     border: solid 5px #dbce97;
     cursor: pointer;
 }
+footer{
+    color: #f6f7f9;
+    text-align: center;
+  }
