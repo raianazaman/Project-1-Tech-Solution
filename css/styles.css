@@ -55,7 +55,9 @@ Parallax and Page Styling
 #buttonRow {
     margin-top: 130px;
 }
-
+#reviews{
+    color: black;
+}
 #startButton {
 
     font-size: 20px;
@@ -85,7 +87,7 @@ Parallax and Page Styling
 }
 
 #question {
-    font-size: 37px;
+    font-size: 30px;
 }
 
 

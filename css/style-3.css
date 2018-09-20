@@ -21,6 +21,10 @@
     font-family:Georgia, serif;
     color: orange;
   }
+  p{
+   font-size:  12px;
+   line-height: 15px;
+  }
 
   .row{
     display:table;
@@ -300,4 +304,8 @@ ul.social-icons li a img{
       top:0px;
     }
   }
-  
+  @media only screen and (min-width: 0){
+    .parallax-container .section{
+      font-size: 8px;
+  }
+}
