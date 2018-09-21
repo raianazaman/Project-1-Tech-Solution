@@ -184,8 +184,13 @@ section#members{
   border-bottom-right-radius:100%;
   border-bottom-left-radius:100%;
 }
-.single-member h5{
+.single-member h5 {
   font-size:16px;
+}
+h6{
+  color: rgb(7, 6, 6);
+  font-size:46px;
+
 }
 .single-member p{
   font-size:12px;
@@ -247,10 +252,13 @@ ul.social-icons li a img{
   }
   .responsive-img{
     width:65px;
-    height:141px;
+ margin: 0px;
   }
 
-
+  #walmart{
+    color: black;
+    padding: 10px 10px 10px 10px;
+  }
  /* result page start */
   .header.col.s12.light{
     font-weight:800;

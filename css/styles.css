@@ -12,7 +12,11 @@ main {
     flex: 1 0 auto;
 }
 
-
+h6{
+    color: rgb(7, 6, 6);
+    font-size:46px;
+  
+  }
 
 
 /*****************
@@ -55,8 +59,14 @@ Parallax and Page Styling
 #buttonRow {
     margin-top: 130px;
 }
-#reviews{
+#reviews {
     color: black;
+    padding: 10px 10px 10px 10px;
+}
+#yTLink
+{
+    color: black;
+    padding: 10px 10px 10px 10px;
 }
 #startButton {
 

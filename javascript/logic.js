@@ -181,7 +181,7 @@ $(document).ready(function() {
         var choice = $(this).text();
 
         if (choice === "Documentation") {
-            choice = "4GB"
+            choice = "8GB"
         } 
         else if (choice === "Design work") {
             choice = "8GB"
