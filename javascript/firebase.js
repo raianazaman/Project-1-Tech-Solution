@@ -54,3 +54,23 @@ $("#userInfo").on("click", function(event){
             $("#userInfo").hide();
         });
     });
+
+// $("#send").on("click", function(event){
+//         event.preventDefault();
+    
+//         var userName = $("#userID").val().trim();
+//         var userMessage = $("#message").val().trim();
+
+//         console.log(userName)
+//         console.log(userMessage)
+
+//         if (userName && userMessage){
+//             $("#userID").val("");
+//             $("#message").val("");
+
+//             database.ref().push({
+//                 userName: userName,
+//                 userMessage: userMessage
+//             });
+//         }
+// });
